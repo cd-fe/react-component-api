@@ -1,0 +1,181 @@
+@-webkit-keyframes rightToLeft {
+    0% {
+        left: 1980px
+    }
+    to {
+        left: 0
+    }
+}
+
+.clearfix:after, .wrapper .content .components:after {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0
+}
+
+.clearfix, .wrapper .content .components {
+    zoom: 1
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.wrapper .topbar {
+    width: 100%;
+    line-height: 40px;
+    background: #2ea3dd;
+    color: #fff;
+    clear: both
+}
+
+.wrapper .topbar .row {
+    width: 80%;
+    margin: 0 auto
+}
+
+.wrapper .topbar .row .menu {
+    float: right
+}
+
+.wrapper .topbar .row .menu li {
+    float: left;
+    margin-left: 20px
+}
+
+.wrapper .topbar .row .menu li a {
+    color: #fff
+}
+
+.wrapper .content {
+    width: 80%;
+    margin: 20px auto 0;
+    overflow-x: hidden
+}
+
+.wrapper .content .home > h3 {
+    font-size: 40px;
+    text-align: center
+}
+
+.wrapper .content .home > p {
+    line-height: 32px;
+    font-size: 16px
+}
+
+.wrapper .content .home .home-list {
+    text-align: center;
+    margin-top: 20px
+}
+
+.wrapper .content .home .home-list a {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    background: #eceaea;
+    line-height: 40px;
+    margin-right: 20px
+}
+
+.wrapper .content .home .home-list a:last-child {
+    margin-right: 0
+}
+
+.wrapper .content .components {
+    counter-reset: header3
+}
+
+.wrapper .content .components .lists {
+    width: 20%;
+    float: left
+}
+
+.wrapper .content .components .lists h3 {
+    line-height:34px;
+    text-indent:10px;
+    background:#2ea3dd;
+    color:#fff;
+}
+
+.wrapper .content .components .lists a {
+    text-indent: 10px;
+    display: block;
+    width: 100%;
+    line-height: 34px;
+    color: #666;
+    box-sizing: border-box
+}
+
+.wrapper .content .components .lists a:hover {
+    background: #ececec;
+    color: #343434
+}
+
+.wrapper .content .components .lists a.active {
+    border-left: 4px solid #2ea3dd
+}
+
+.wrapper .content .components .component-detail {
+    float: right;
+    width: 78%;
+    counter-reset: header4
+}
+
+.wrapper .content .components .component-detail > div {
+    position: relative;
+    -webkit-animation: rightToLeft .5s ease both
+}
+
+.wrapper .content .components .component-detail h2.title {
+    line-height: 40px;
+    border-bottom: 1px solid #eceaea;
+    font-size: 20px
+}
+
+.wrapper .content .components .component-detail h2.title span:last-child {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #999
+}
+
+.wrapper .content .components .component-detail h3.sub-title {
+    line-height: 34px;
+    margin: 20px 0 10px
+}
+
+.wrapper .content .components .component-detail h3.sub-title:before {
+    color: #999;
+    counter-increment: header3;
+    content: counter(header3) ". "
+}
+
+.wrapper .content .components .component-detail h4.final-title {
+    line-height: 28px;
+    margin: 10px 0 5px
+}
+
+.wrapper .content .components .component-detail h4.final-title:before {
+    color: #999;
+    counter-increment: header4;
+    content: counter(header3) "." counter(header4) ". "
+}
+
+.wrapper .content .components .component-detail .source > textarea {
+    display: none
+}
+
+#main {
+    float:none;
+    width:100%;
+}
+
+.page-title {
+    font-family:"Helvetica Neue", Helvetica, Tahoma, Microsoft Yahei;
+}
+
+.prettyprint.linenums {
+    padding:0;
+}

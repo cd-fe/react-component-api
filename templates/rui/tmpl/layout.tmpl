@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: <?js= title ?></title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="styles/reset.css">
+    <link type="text/css" rel="stylesheet" href="styles/rui.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <div id="main">
+        <div class="topbar">
+            <div class="row">
+                <a style="color:#fff;" class="" href="http://5doe.com/custom/react-component/example/index.html">React Component</span></a>
+                <ul class="menu">
+                    <li><a href="http://5doe.com/custom/react-component/example/index.html#components/button">组件列表</a></li>
+                    <li><a href="http://5doe.com/custom/react-component/example/index.html#components/button">入门指南</a></li>
+                    <li><a href="http://5doe.com/custom/react-component-api/index.html">API Doc</a></li>
+                    <li><a href="http://github.com/cd-fe/react-component">Github</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="components">
+                <div class="lists">
+                    <?js= this.nav ?>
+                </div>
+                <div class="component-detail">
+                    <h1 class="page-title"><?js= title ?></h1>
+                    <?js= content ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>文档工具(<a href="https://github.com/jsdoc3/jsdoc">JSDoc <?js= env.version.number ?></a>)</p>
+        <p>文档更新于<?js= ((new Date()).toLocaleString()) ?></p>
+    </footer>
+</div>
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

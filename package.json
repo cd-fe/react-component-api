@@ -1,0 +1,32 @@
+{
+  "name": "react-component-api",
+  "version": "1.0.0",
+  "description": "1.0.0",
+  "main": "out/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -r ./out&jsdoc -r node_modules/react-component-lib/src/js -t templates/rui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cd-fe/react-component-api.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "form",
+    "table",
+    "plugin",
+    "api"
+  ],
+  "author": "darkty2009",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cd-fe/react-component-api/issues"
+  },
+  "homepage": "https://github.com/cd-fe/react-component-api#readme",
+  "devDependencies":{
+    "react-component-lib":"latest",
+    "jsdoc":"^3.4.0"
+  }
+}
